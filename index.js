@@ -26,6 +26,7 @@ function sumarAlCarrito(e)
     //--- Obtengo la referencia al elemento clickeado desde en base al evento (Propiedad exclusivamente de todos los Events) ---//
     let elementoClickeado = e.target;
     
+    // recien me doy cuenta que solo agarre li-hamburguesa (osea las hamburguesas) jaaa
     let producto = elementoClickeado.closest(".li-hamburguesa");
     let nombreProducto = producto.querySelector(".nombre-producto").textContent;
     let precioProducto = producto.querySelector(".precio-producto").textContent;
@@ -62,6 +63,8 @@ function restarDelCarrito(e)
     //--- Obtengo la referencia al elemento clickeado desde en base al evento (Propiedad exclusivamente de todos los Events) ---//
     let elementoClickeado = e.target;
     
+    // recien me doy cuenta que solo agarre li-hamburguesa (osea las hamburguesas) jaaa
+
     let producto = elementoClickeado.closest(".li-hamburguesa");
     let nombreProducto = producto.querySelector(".nombre-producto").textContent;
 

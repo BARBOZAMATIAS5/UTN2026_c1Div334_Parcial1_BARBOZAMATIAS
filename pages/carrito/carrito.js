@@ -15,7 +15,7 @@ function cargarProductosCarrito()
     let tabla = document.getElementById("cuerpo-carrito");
     tabla.innerHTML = "";
 
-    for (let i = 0; i < carrito.lenght; i++){
+    for (let i = 0; i < carrito.length; i++){
         let producto = carrito[i];
         tabla.innerHTML += `
         <tr>
